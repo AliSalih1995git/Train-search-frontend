@@ -16,7 +16,7 @@ function HomePage() {
     const fetchStations = async () => {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/getAllstation`
+          `${process.env.REACT_APP_BACKEND_URL}/api/station/getAllstation`
         );
 
         setAllStation(response.data);
