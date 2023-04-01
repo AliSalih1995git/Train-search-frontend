@@ -2,9 +2,6 @@
 
 This project is a Train search application that allows users to select source and destination stations from the available options and view a list of trains that operate on that route. The application should enable users to sort the list of trains based on prices and timings for entered route.
 
-Clone the project:
-git clone https://github.com/AliSalih1995git/Step_Addition_Client.git
-
 ## Getting Started
 
 1. Clone the repository:
