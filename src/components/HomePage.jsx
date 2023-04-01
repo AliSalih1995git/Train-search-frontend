@@ -16,7 +16,7 @@ function HomePage() {
     const fetchStations = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/station/getAllstation"
+          "process.env.BACKEND_URL/getAllstation"
         );
 
         setAllStation(response.data);
@@ -31,7 +31,7 @@ function HomePage() {
   const fetchTrainData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/train/${from}/${to}`
+        `process.env.BACKEND_URL/api/train/${from}/${to}`
       );
       setTrains(response.data.trains);
     } catch (error) {
